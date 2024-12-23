@@ -5,9 +5,9 @@ const App = () => {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
 
   const availableItems= [
-    "Applesssssssssssssssssssssssssssssssss",
-    "Bananazzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
-    "Cherrybbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "Apple",
+    "Banana",
+    "Cherry",
     "Date",
     "Elderberry",
     "Fig",
