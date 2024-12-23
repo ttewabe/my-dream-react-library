@@ -3,6 +3,7 @@ import './App.css'
 
 const App = () => {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
+  const [isFocused, setIsFocused] = useState<boolean>(false);
 
   const availableItems= [
     "Apple",
@@ -25,6 +26,9 @@ const App = () => {
   return (
     <div
       className="multi-select-container"
+      tabIndex={0}
+      onFocus={() => setIsFocused(true)}
+      onBlur={() => setIsFocused(false)}
     >
       <div className="multi-select-input">
         {selectedItems.slice(0, 3).map((item, index) => (
@@ -36,6 +40,7 @@ const App = () => {
           <span className="total">+{selectedItems.length - 3}</span>
         )} {/*display the total number of items*/}
       </div> 
+      {isFocused && (
         <div className="dropdown">
           {availableItems.map((item, index) => (
             <div
@@ -47,7 +52,8 @@ const App = () => {
             </div>
           ))} {/*display the dropdown items*/}
         </div>
-    </div>
+         )} {/*display the dropdown only when the input is focused*/}
+    </div>   
   );
 };
 export default App;
