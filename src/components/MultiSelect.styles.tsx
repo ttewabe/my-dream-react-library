@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MultiSelectContainer = styled.div`
+background-color: #e3eaea;
   display: inline-block;
   position: relative;
   width: 600px;
@@ -12,7 +13,7 @@ export const MultiSelectInput = styled.div`
   height: 50px;
   justify-content: center;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 3px solid #6a0909;
   border-radius: 4px;
   padding: 4px;
   width: 100%;
