@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const MultiSelectContainer = styled.div`
-background-color: #e3eaea;
   display: inline-block;
   position: relative;
   width: 600px;
@@ -13,13 +12,13 @@ export const MultiSelectInput = styled.div`
   height: 50px;
   justify-content: center;
   align-items: center;
-  border: 3px solid #6a0909;
-  border-radius: 4px;
+  border: 3px solid #171010;
+  border-radius: 10px;
   padding: 4px;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: thistle;
+  background-color: #d1f7e8;
   color: black;
 `;
 
@@ -43,10 +42,10 @@ export const Dropdown = styled.div`
   top: 100%;
   left: 0;
   right: 0;
-  background-color: thistle;
+  background-color: #afbcf2;
   color: black;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   max-height: 200px;
   overflow-y: auto;
   z-index: 10;
