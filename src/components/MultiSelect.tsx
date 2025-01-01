@@ -8,18 +8,11 @@ import {
   DropdownItem,
 } from './MultiSelect.styles';
 
-const MultiSelect = () => {
+export const MultiSelect = () => {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
-  const availableItems = [
-    'Apple',
-    'Banana',
-    'Cherry',
-    'Date',
-    'Elderberry',
-    'Fig',
-    'Grape',
+  const availableItems = ['Apple','Banana','Cherry','Date','Elderberry','Fig','Grape',
   ];
 
   const toggleItem = (item: string) => {
@@ -31,6 +24,7 @@ const MultiSelect = () => {
   };
 
   return (
+    <div className='App'>
     <MultiSelectContainer
       tabIndex={0}
       onFocus={() => setIsFocused(true)}
@@ -58,7 +52,6 @@ const MultiSelect = () => {
         </Dropdown>
       )}
     </MultiSelectContainer>
+    </div>
   );
 };
-
-export default MultiSelect;

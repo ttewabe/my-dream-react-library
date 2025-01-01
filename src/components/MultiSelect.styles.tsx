@@ -2,8 +2,9 @@ import styled from 'styled-components';
 
 export const MultiSelectContainer = styled.div`
   display: inline-block;
+  align-content: center;
   position: relative;
-  width: 600px;
+  width: 400px;
   outline: none;
 `;
 
