@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const MultiSelectContainer = styled.div`
+background-color: aqua;
   display: inline-block;
   align-content: center;
   position: relative;

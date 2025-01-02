@@ -5,7 +5,7 @@ import {MultiSelect} from '../components/MultiSelect';
 
 
 export default {
-  title: 'Components/MultiSelect', 
+  title: 'INPUTS/MultiSelect', 
   component: MultiSelect,
 } as Meta<typeof MultiSelect>;
 
