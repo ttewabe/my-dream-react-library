@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
+
 export const MultiSelectContainer = styled.div`
-background-color: aqua;
   display: inline-block;
   align-content: center;
   position: relative;
@@ -9,19 +9,31 @@ background-color: aqua;
   outline: none;
 `;
 
-export const MultiSelectInput = styled.div`
+export const MultiSelectInput = styled.div<{ isFocus: boolean }>`
+  border: ${({ isFocus }) => (isFocus ? '2px solid blue' : '1px solid #ccc')};
   display: flex;
   height: 50px;
   justify-content: center;
   align-items: center;
-  border: 3px solid #171010;
   border-radius: 10px;
   padding: 4px;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #d1f7e8;
   color: black;
+`;
+
+export const Label = styled.label`
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+`;
+
+export const Placeholder = styled.span`
+  color: #aaa;
+  font-size: 14px;
 `;
 
 export const Chip = styled.div`
@@ -35,7 +47,7 @@ export const Chip = styled.div`
 `;
 
 export const Total = styled.span`
-  margin-left: auto;
+  margin: auto;
   font-weight: bold;
 `;
 
@@ -58,11 +70,11 @@ export const DropdownItem = styled.div`
   cursor: pointer;
 
   &.selected {
-    background-color: #f0f0f0;
+    background-color: #aaaaaa;
     font-weight: bold;
   }
 
   &:hover {
-    background-color: #e0e0e0;
+    background-color: #aac4eb;
   }
 `;

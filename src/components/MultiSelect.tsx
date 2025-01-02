@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
-import {
-  MultiSelectContainer,
-  MultiSelectInput,
-  Chip,
-  Total,
-  Dropdown,
-  DropdownItem,
-} from './MultiSelect.styles';
+import { MultiSelectContainer, MultiSelectInput,Chip,DropdownItem, Total, Label, Placeholder, Dropdown } from './MultiSelect.styles';
 
-export const MultiSelect = () => {
+interface MultiSelectProps {
+  label: string;
+  placeholder: string;
+  required?: boolean;
+}
+
+export const MultiSelect: React.FC<MultiSelectProps> = ({ label, placeholder, required }) => {
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
   const [isFocused, setIsFocused] = useState<boolean>(false);
 
-  const availableItems = ['Apple','Banana','Cherry','Date','Elderberry','Fig','Grape',
-  ];
+  const availableItems = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry', 'Fig', 'Grape'];
 
   const toggleItem = (item: string) => {
     setSelectedItems((prev) =>
@@ -24,34 +22,39 @@ export const MultiSelect = () => {
   };
 
   return (
-    <div className='App'>
-    <MultiSelectContainer
-      tabIndex={0}
-      onFocus={() => setIsFocused(true)}
-      onBlur={() => setIsFocused(false)}
-    >
-      <MultiSelectInput>
-        {selectedItems.slice(0, 3).map((item, index) => (
-          <Chip key={index}>{item}</Chip>
-        ))}
-        {selectedItems.length > 3 && (
+    <div className="App">
+      <Label>{label} {required && <span style={{ color: 'red' }}>*</span>}</Label>
+      <MultiSelectContainer
+        tabIndex={0}
+        onFocus={() => setIsFocused(true)}
+        onBlur={() => setIsFocused(false)}
+      >
+        <MultiSelectInput isFocus={isFocused}>
+          {selectedItems.length === 0 ? (
+            <Placeholder>{placeholder}</Placeholder>
+          ) : (
+            selectedItems.slice(0, 3).map((item, index) => (
+              <Chip key={index}>{item}</Chip>
+            ))
+          )}
+          {selectedItems.length > 3 && (
           <Total>+{selectedItems.length - 3}</Total>
         )}
-      </MultiSelectInput>
-      {isFocused && (
-        <Dropdown>
-          {availableItems.map((item, index) => (
-            <DropdownItem
-              key={index}
-              className={selectedItems.includes(item) ? 'selected' : ''}
-              onClick={() => toggleItem(item)}
-            >
-              {item}
-            </DropdownItem>
-          ))}
-        </Dropdown>
-      )}
-    </MultiSelectContainer>
+        </MultiSelectInput>
+        {isFocused && (
+          <Dropdown>
+            {availableItems.map((item, index) => (
+              <DropdownItem
+                key={index}
+                className={selectedItems.includes(item) ? 'selected' : ''}
+                onClick={() => toggleItem(item)}
+              >
+                {item}
+              </DropdownItem>
+            ))}
+          </Dropdown>
+        )}
+      </MultiSelectContainer>
     </div>
   );
 };
