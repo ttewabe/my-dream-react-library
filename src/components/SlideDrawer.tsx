@@ -1,5 +1,5 @@
 import React from 'react';
-import { slideDrawerStyles } from './SlideDrawer.styles';
+import {Overlay, Drawer}from './SlideDrawer.styles';
 
 interface SlideDrawerProps {
   isOpen: boolean;
@@ -15,10 +15,12 @@ export const SlideDrawer: React.FC<SlideDrawerProps> = ({
   children,
 }) => {
   return (
-    <div className='slide-drawer'>
-      <div style={slideDrawerStyles.overlay(isOpen)} onClick={onClose} />
-      <div style={slideDrawerStyles.drawer(isOpen, position)}>{children}</div>
+    <div>
+      <Overlay isOpen={isOpen} onClick={onClose} />
+      <Drawer isOpen={isOpen} position={position}>
+        {children}
+      </Drawer>
     </div>
   );
-};
+};;
 
