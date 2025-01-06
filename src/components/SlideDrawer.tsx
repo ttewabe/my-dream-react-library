@@ -8,12 +8,8 @@ interface SlideDrawerProps {
   children: React.ReactNode;
 }
 
-export const SlideDrawer: React.FC<SlideDrawerProps> = ({
-  isOpen,
-  onClose,
-  position = 'left',
-  children,
-}) => {
+export const SlideDrawer: React.FC<SlideDrawerProps> = ({isOpen, onClose, position = 'right', children}) => {
+  
   return (
     <div>
       <Overlay isOpen={isOpen} onClick={onClose} />

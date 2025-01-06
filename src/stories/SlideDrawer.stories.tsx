@@ -15,17 +15,21 @@ export default {
   },
 } as Meta<typeof SlideDrawer>;
 
-// Correctly typed Template function
+
 const Template: StoryFn<typeof SlideDrawer> = (args) => {
   const [isOpen, setIsOpen] = useState(args.isOpen);
 
   return (
     <>
-      <button onClick={() => setIsOpen(!isOpen)}>Toggle Drawer</button>
+      <button  style={{ padding: '10px', background:"gray", color:"white",border: 'none', cursor: 'pointer', fontSize:"20px", fontWeight:"bold" }}
+       onClick={() => setIsOpen(!isOpen)} >Toggle Drawer</button>
       <SlideDrawer {...args} isOpen={isOpen} onClose={() => setIsOpen(false)}>
-        <div style={{ padding: '16px' }}>
-          <h3>SlideDrawer Content</h3>
-          <p>This is the content inside the drawer.</p>
+        <div style={{padding: '6px', background:"lightGray", width:"auto", height:"auto",fontSize:"20px", fontWeight:"bold" }}>
+        <span
+            style={{position: 'absolute',top: '5px', right: '15px',color: 'brown',border: 'none', cursor: 'pointer'}}
+            onClick={() => setIsOpen(false)}>X</span>
+          <h1>SlideDrawer</h1>
+          <p>The content inside the drawer.</p>
         </div>
       </SlideDrawer>
     </>

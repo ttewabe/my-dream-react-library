@@ -8,17 +8,18 @@ export const Overlay = styled.div<{ isOpen: boolean }>`
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: 1000;
 `;
 
 export const Drawer = styled.div<{ isOpen: boolean; position: 'left' | 'right' | 'top' | 'bottom' }>`
+  margin: 10px 1px 0px 2px;
   position: fixed;
   top: ${({ position }) => (position === 'top' || position === 'bottom' ? '0' : 'auto')};
   bottom: ${({ position }) => (position === 'bottom' ? '0' : 'auto')};
   left: ${({ position }) => (position === 'left' ? '0' : 'auto')};
   right: ${({ position }) => (position === 'right' ? '0' : 'auto')};
-  width: ${({ position }) => (position === 'left' || position === 'right' ? '250px' : '100%')};
-  height: ${({ position }) => (position === 'top' || position === 'bottom' ? '250px' : '100%')};
+  width: ${({ position }) => (position === 'left' || position === 'right' ? '350px' : '100%')};
+  height: ${({ position }) => (position === 'top' || position === 'bottom' ? '350px' : '100%')};
   background-color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
