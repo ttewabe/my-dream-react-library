@@ -14,7 +14,7 @@ export const Default: Story = {
   render: (args) => <Card {...args} />,
   args: {
     header: "Card Header",
-  headerLabel: "Label",
+  headerLabel: "L",
   children: <p>This is the content of the card.</p>,
   },
 };
@@ -23,7 +23,7 @@ export const WithLongContent: Story = {
   render:(args)=>  <Card {...args} />,
   args: {
   header: "Card Header",
-  headerLabel: "Label",
+  headerLabel: "L",
   children: (
     <div>
       <p>This is some longer content inside the card.</p>
