@@ -1,6 +1,6 @@
 import React from 'react'
 //import './App.css'
-import MultiSelect from './components/MultiSelect';
+import MultiSelect from './tat-react-project/multi-select/MultiSelect';
 
 const App = () => {
   

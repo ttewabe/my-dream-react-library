@@ -1,6 +1,6 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { TextField} from '../components/TextField';
+import { TextField} from '../tat-react-project/text-field/TextField';
 
 export default {
   title: 'INPUTS/TextField',

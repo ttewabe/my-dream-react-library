@@ -1,7 +1,7 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 
-import { MultiSelect } from '../components/MultiSelect';
+import { MultiSelect } from '../tat-react-project/multi-select/MultiSelect';
 
 export default {
   title: 'INPUTS/MultiSelect',

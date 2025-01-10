@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Meta, StoryFn } from '@storybook/react';
-import {SlideDrawer} from '../components/SlideDrawer';
+import {SlideDrawer} from '../tat-react-project/slide-drawer/SlideDrawer';
 
 export default {
   title: 'LAYOUT/SlideDrawer',

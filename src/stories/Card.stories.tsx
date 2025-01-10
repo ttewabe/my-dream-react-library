@@ -1,6 +1,6 @@
 import React from "react";
 import { Meta, StoryObj } from "@storybook/react";
-import { Card} from '../components/Card';
+import { Card} from '../tat-react-project/card/Card';
 
 export default {
     title: 'LAYOUT/Card',
