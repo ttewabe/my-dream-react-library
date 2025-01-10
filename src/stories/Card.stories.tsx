@@ -1,6 +1,6 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import { Card} from '../tat-react-project/card/Card';
+import React from 'react';
+import { Meta, StoryObj } from '@storybook/react';
+import { Card } from '../tat-react-project/card/Card';
 
 export default {
     title: 'LAYOUT/Card',
@@ -11,33 +11,36 @@ export default {
 type Story = StoryObj<typeof Card>;
 
 export const Default: Story = {
-  render: (args) => <Card {...args} />,
-  args: {
-    header: "Card Header",
-  headerLabel: "L",
-  children: <p>This is the content of the card.</p>,
-  },
+    render: (args) => <Card {...args} />,
+    args: {
+        header: 'Card Header',
+        headerLabel: 'L',
+        children: <p>This is the content of the card.</p>,
+    },
 };
 
 export const WithLongContent: Story = {
-  render:(args)=>  <Card {...args} />,
-  args: {
-  header: "Card Header",
-  headerLabel: "L",
-  children: (
-    <div>
-      <p>This is some longer content inside the card.</p>
-      <p>You can use this to test how the card handles larger amounts of content.</p>
-    </div>
-  ),
-}
+    render: (args) => <Card {...args} />,
+    args: {
+        header: 'Card Header',
+        headerLabel: 'L',
+        children: (
+            <div>
+                <p>This is some longer content inside the card.</p>
+                <p>
+                    You can use this to test how the card handles larger amounts
+                    of content.
+                </p>
+            </div>
+        ),
+    },
 };
 
-export const WithoutChildren : Story = {
-    render:(args)=>  <Card {...args} />,
+export const WithoutChildren: Story = {
+    render: (args) => <Card {...args} />,
     args: {
-  header: "Card Header",
-  headerLabel: "Label",
-  children: undefined,
-}
+        header: 'Card Header',
+        headerLabel: 'Label',
+        children: undefined,
+    },
 };
