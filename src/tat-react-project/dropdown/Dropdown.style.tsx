@@ -1,12 +1,26 @@
 import styled from 'styled-components';
 
 export const View = styled.div`
-    background-color: #ddefef;
-    padding: 10px 10px;
-    border: 2px solid lightgray;
-    border-radius: 15px;
-    width: 400px;
-    margin: 10px;
-    box-shadow: 5px 5px 5px lightgray;
-    transition: all 0.9s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    select {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #f0f0f0;
+            cursor: not-allowed;
+        }
+    }
 `;
