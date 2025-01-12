@@ -5703,14 +5703,12 @@ function my(e, t, r, n, a, o, i, s, c) {
                             ),
                         };
                     if (I === 0) {
-                        var L = p
-                                .slice(h + 1, f)
-                                .concat(
-                                    xo({
-                                        children: [z],
-                                        className: C.properties.className,
-                                    })
-                                ),
+                        var L = p.slice(h + 1, f).concat(
+                                xo({
+                                    children: [z],
+                                    className: C.properties.className,
+                                })
+                            ),
                             M = w(L, B);
                         m.push(M);
                     } else if (I === A.length - 1) {
