@@ -1,35 +1,35 @@
 import { j as e } from './jsx-runtime-WdPq8kIh.js';
-import { d as l } from './styled-components.browser.esm-DUzjfXJ_.js';
+import { d as l } from './styled-components.browser.esm-hNWxsyDk.js';
 import './index-BpYrhlGc.js';
 const m = l.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 400px;
-  margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 16px;
 `,
     b = l.input`
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 8px;
-  font-size: 16px;
-  color: #333;
-  box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
 
-  &:focus {
-    border-color: blue;
-    outline: none;
-  }
+    &:focus {
+        border-color: blue;
+        outline: none;
+    }
 `,
     f = l.label`
-  margin-bottom: 8px;
-  font-size: 14px;
-  font-weight: bold;
-  color: #333;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
 `;
 l.span`
-  color: #aaa;
-  font-size: 14px;
+    color: #aaa;
+    font-size: 14px;
 `;
 const a = ({ label: r, placeholder: u, required: x }) =>
     e.jsxs('div', {
