@@ -73,6 +73,15 @@
             "componentPath": "./src/tat-react-project/card/Card.tsx",
             "tags": ["dev", "test"]
         },
+        "overlays-dropdown--default": {
+            "type": "story",
+            "id": "overlays-dropdown--default",
+            "name": "Default",
+            "title": "OVERLAYS/Dropdown",
+            "importPath": "./src/stories/Dropdown.stories.tsx",
+            "componentPath": "./src/tat-react-project/dropdown/Dropdown.tsx",
+            "tags": ["dev", "test"]
+        },
         "inputs-multiselect--default": {
             "type": "story",
             "id": "inputs-multiselect--default",

@@ -1,54 +1,54 @@
 import { f as z } from './index-Dj6nxAlZ.js';
 import { j as k } from './jsx-runtime-WdPq8kIh.js';
-import { d as T, l as r } from './styled-components.browser.esm-DUzjfXJ_.js';
+import { d as T, l as r } from './styled-components.browser.esm-hNWxsyDk.js';
 import './index-BpYrhlGc.js';
 const w = T.button`
-  display: inline-block;
-  cursor: pointer;
-  border: 0;
-  border-radius: 3em;
-  font-weight: 700;
-  line-height: 1;
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  
-  ${({ primary: e }) =>
-      e
-          ? r`
-          background-color: #1ea7fd;
-          color: white;
-        `
-          : r`
-          background-color: transparent;
-          color: #333;
-          box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
-        `}
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    border-radius: 3em;
+    font-weight: 700;
+    line-height: 1;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
-  ${({ size: e }) => {
-      switch (e) {
-          case 'small':
-              return r`
-          padding: 10px 16px;
-          font-size: 12px;
-        `;
-          case 'large':
-              return r`
-          padding: 12px 24px;
-          font-size: 16px;
-        `;
-          case 'medium':
-          default:
-              return r`
-          padding: 11px 20px;
-          font-size: 14px;
-        `;
-      }
-  }}
+    ${({ primary: e }) =>
+        e
+            ? r`
+                  background-color: #1ea7fd;
+                  color: white;
+              `
+            : r`
+                  background-color: transparent;
+                  color: #333;
+                  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+              `}
+
+    ${({ size: e }) => {
+        switch (e) {
+            case 'small':
+                return r`
+                    padding: 10px 16px;
+                    font-size: 12px;
+                `;
+            case 'large':
+                return r`
+                    padding: 12px 24px;
+                    font-size: 16px;
+                `;
+            case 'medium':
+            default:
+                return r`
+                    padding: 11px 20px;
+                    font-size: 14px;
+                `;
+        }
+    }}
 
   ${({ backgroundColor: e }) =>
       e &&
       r`
-      background-color: ${e};
-    `}
+            background-color: ${e};
+        `}
 `,
     y = ({
         primary: e = !1,

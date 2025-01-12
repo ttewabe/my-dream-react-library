@@ -1,16 +1,16 @@
 import { j as e } from './jsx-runtime-WdPq8kIh.js';
-import { d as C } from './styled-components.browser.esm-DUzjfXJ_.js';
+import { d as C } from './styled-components.browser.esm-hNWxsyDk.js';
 import './index-BpYrhlGc.js';
 const f = C.div`
-background-color: #ddefef;
-  padding:0px 10px;
-  border: 2px solid lightgray;
-  border-radius:15px;
-  width: 400px;
-  margin: 10px;
-  box-shadow: 5px 5px 5px lightgray;
-  transition: all 0.9s ease;
-  `,
+    background-color: #ddefef;
+    padding: 0px 10px;
+    border: 2px solid lightgray;
+    border-radius: 15px;
+    width: 400px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px lightgray;
+    transition: all 0.9s ease;
+`,
     a = ({ header: r, headerLabel: g, children: x }) =>
         e.jsxs(f, {
             children: [
@@ -97,8 +97,8 @@ n.parameters = {
             originalSource: `{
   render: args => <Card {...args} />,
   args: {
-    header: "Card Header",
-    headerLabel: "L",
+    header: 'Card Header',
+    headerLabel: 'L',
     children: <p>This is the content of the card.</p>
   }
 }`,
@@ -117,12 +117,15 @@ d.parameters = {
             originalSource: `{
   render: args => <Card {...args} />,
   args: {
-    header: "Card Header",
-    headerLabel: "L",
-    children: <div>\r
-      <p>This is some longer content inside the card.</p>\r
-      <p>You can use this to test how the card handles larger amounts of content.</p>\r
-    </div>
+    header: 'Card Header',
+    headerLabel: 'L',
+    children: <div>
+                <p>This is some longer content inside the card.</p>
+                <p>
+                    You can use this to test how the card handles larger amounts
+                    of content.
+                </p>
+            </div>
   }
 }`,
             ...((l = (h = d.parameters) == null ? void 0 : h.docs) == null
@@ -140,8 +143,8 @@ s.parameters = {
             originalSource: `{
   render: args => <Card {...args} />,
   args: {
-    header: "Card Header",
-    headerLabel: "Label",
+    header: 'Card Header',
+    headerLabel: 'Label',
     children: undefined
   }
 }`,
