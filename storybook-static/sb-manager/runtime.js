@@ -12629,7 +12629,10 @@ y to select.'
 s(fv, 'getA11yStatusMessage');
 function Jc(e, t) {
     return (
-        (e = Array.isArray(e) ? /* istanbul ignore next (preact) */ e[0] : e),
+        (e = Array.isArray(e)
+            ? /* istanbul ignore next (preact) */
+              e[0]
+            : e),
         !e && t ? t : e
     );
 }

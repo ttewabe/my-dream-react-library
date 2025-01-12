@@ -1,12 +1,10 @@
 import React from 'react';
-//import './App.css'
-import MultiSelect from './tat-react-project/multi-select/MultiSelect';
+import { MultiSelect } from './tat-react-project/multi-select/MultiSelect';
 
-const App = () => {
+export const App = () => {
     return (
         <div>
-            <MultiSelect />
+            <MultiSelect label={''} placeholder={''} />
         </div>
     );
 };
-export default App;

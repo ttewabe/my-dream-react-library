@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from './Dropdown.style';
+import { View } from './Dropdown.styles';
 
 export interface DropdownProps {
     id: string;
