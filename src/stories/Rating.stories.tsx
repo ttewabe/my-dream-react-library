@@ -1,35 +1,15 @@
 import React from 'react';
 import { Meta, StoryObj } from '@storybook/react';
-import { Rating } from '../tat-react-project/rating/Rating';
+import { RatingValue } from '../tat-react-project/rating/Rating';
 import { RatingProps } from 'primereact/rating';
 
 export default {
     title: 'FORM/Rating',
-    component: Rating,
-    argTypes: {
-        value: { control: 'number' },
-        readOnly: { control: 'boolean' },
-        cancel: { control: 'boolean' },
-        disabled: { control: 'boolean' },
-        stars: { control: 'number' },
-    },
+    component: RatingValue,
 } as Meta<RatingProps>;
 
-type Story = StoryObj<typeof Rating>;
+type Story = StoryObj<typeof RatingValue>;
 
 export const Default: Story = {
-    render: (args) => <Rating {...args} />,
-    args: {
-        value: 3,
-        stars: 5,
-        readOnly: false,
-        cancel: true,
-    },
+    render: (args) => <RatingValue {...args} />,
 };
-
-// export const ReadOnly = Template.bind({});
-// ReadOnly.args = {
-//     value: 4,
-//     stars: 5,
-//     readOnly: true,
-// };
